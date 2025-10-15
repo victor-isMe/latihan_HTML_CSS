@@ -12,12 +12,74 @@
             color: #1a1a2e;
             font-family: sans-serif;
         }
+
+        h1{
+            font-size: 4em;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        header{
+            width: 100vw;
+            max-width: 100%;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid black;
+        }
+        .navlist{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+
+        }
+        .navlist a{
+            text-decoration: none;
+        }
+
+        #hero {
+            height: 100vh;
+            max-height: 100vh;
+        }
+        .welcomeMessage{
+            position: absolute;
+            top: 25%;
+            left: 5%;
+        }
+        .buttonViewWork{
+            position: absolute;
+            left:5%;
+            top: 65%;
+        }
+        .buttonViewWork button{
+            width: 150%;
+            padding:10% 25%;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .photo{
+            height: 20em;
+            width: 20em;
+            border-radius: 100%;
+            background-image: url(assets/photo_hero.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 28%;
+            left: 55%;
+        }
     </style>
 </head>
 <body>
     <header>
         <div id="logo">LOGO</div>
-        <nav>
+        <nav class="navbar">
             <ul class="navlist">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -25,7 +87,17 @@
             </ul>
         </nav>
     </header>
-    <section id="hero"></section>
+    <section id="hero">
+        <div class="welcomeMessage">
+            <h1>Hi, I'M</h1>
+            <h1>VICTOR MICHAEL</h1>
+            <p>Software Developer | Front-End Developer</p>
+        </div>
+        <div class="photo"></div>
+        <div class="buttonViewWork">
+            <button>View My Work</button>
+        </div>
+    </section>
     <section id="about"></section>
     <section id="portfolio"></section>
     <section id="contact"></section>
